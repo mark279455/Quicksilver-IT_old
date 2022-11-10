@@ -1,3 +1,43 @@
-h1{
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: Montserrat, sans-serif;
+}
+
+header {
+  display: flex;
+  border: 1px solid #a2d7ba;
+  background: #a2d7ba;
+}
+
+#banner {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  /* align-items: flex-start; */
+  max-height: 100px;
+  width: 50%;
+  /* flex-wrap: wrap; */
+}
+
+.title {
+  font-size: 3.5rem;
+  align-self: center;
+  font-weight: bold;
+}
+
+.logo {
+  height: 100px;
+}
+
+.title-desc {
+  font-size: 1rem;
+  align-self: center;
+}
+
+nav{  /* TEMP list elements are flex - the h1 isnt */
+  align-self: flex-end; 
 }

@@ -1,43 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
 
-body {
-  padding: 0;
+* {
   margin: 0;
-  border: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Montserrat, sans-serif;
 }
 
-header {
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex_parent {
   display: flex;
-  border: 1px solid #a2d7ba;
+  background: #a2d7ba;
+  flex-wrap: nowrap;
+  max-height: 150px;
+}
+
+.left_flex_header {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  /* gap: 1rem; */
+  align-items: flex-end;
+  font-size: 1.5rem;
+}
+
+.right_flex_header {
+  width: 50%;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  background: #a2d7ba;
+  margin-right: 2rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.right_flex_header a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.qit_logo {
+  height: 150px;
+}
+
+.qit {
+  color: darkgreen;
+}
+
+.sales {
+  /* width: 100%; */
+  text-align: center;
+  padding: 20px 20px;
   background: #a2d7ba;
 }
 
-#banner {
-  display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
-  /* align-items: flex-start; */
-  max-height: 100px;
-  width: 50%;
-  /* flex-wrap: wrap; */
-}
-
-.title {
-  font-size: 3.5rem;
-  align-self: center;
+.sales p {
+  font-size: 3rem;
+  color: darkgreen;
   font-weight: bold;
 }
 
-.logo {
+.para {
+  border: 1px solid #a2d7ba;
+}
+
+@media(max-width: 1000px) {
+  .right_flex_header {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+  }
+
+  .right_flex_header a {
+    font-size: 2rem;
+    padding: 50px;
+    margin: 50px;
+  }
+
+  .flex_parent {
+    flex-wrap: wrap;
+  }
+
+  .sales {
+    margin-top: 50px;
+  }
+
+  .left_flex_header {
+    width: 100%;
+  }  
+}
+
+/* @media(max-width: 600px) {
+  .right_flex_header {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .flex_parent {
+    flex-wrap: wrap;
+  }
+} */
+
+header .nav li {
+  margin-bottom: 0 7px;
+}
+
+section {
+  padding: 125px 50px;
+}
+
+footer {
+  background: #a2d7ba;
   height: 100px;
-}
-
-.title-desc {
-  font-size: 1rem;
-  align-self: center;
-}
-
-nav{  /* TEMP list elements are flex - the h1 isnt */
-  align-self: flex-end; 
+  /* border: 1px solid black; */
 }

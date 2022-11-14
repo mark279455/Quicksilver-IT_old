@@ -30,7 +30,6 @@ a {
   width: 50%;
   display: flex;
   justify-content: flex-start;
-  /* gap: 1rem; */
   align-items: flex-end;
   font-size: 1.5rem;
 }
@@ -38,7 +37,6 @@ a {
 .right_flex_header {
   width: 50%;
   display: flex;
-  gap: 0.5rem;
   flex-direction: column;
   background: #a2d7ba;
   margin-right: 2rem;
@@ -46,16 +44,15 @@ a {
   align-items: flex-end;
 }
 
-.right_flex_header a {
+a {
   font-size: 1.5rem;
-  text-transform: lowercase;
   color: #165B11;
 }
 
 .active {
-  font-size: larger;
+  font-size: 2rem;
   font-weight: bold;
-  border-bottom: 1px dashed #165B11;
+  padding: 0;
 }
 
 .qit_logo {
@@ -64,11 +61,12 @@ a {
 
 .qit {
   color: #165B11;
+  font-size: 3rem;
 }
 
 .sales-banner {
   text-align: center;
-  padding: 20px 20px;
+  padding: 10px 10px;
   background: #a2d7ba;
 }
 
@@ -76,6 +74,12 @@ a {
   font-size: 3rem;
   color: #165B11;
   font-weight: bold;
+}
+
+.sticky {
+  position: sticky;
+  width: 100%;
+  top: 0;
 }
 
 /* footer / social media */
@@ -119,8 +123,7 @@ i:hover {
 }
 
 #top {
-  top: -60px;
-  left: -50%;
+  top: -30px;
   font-size: 0.75rem;
   border: 1px solid #165B11;
 }
@@ -133,6 +136,14 @@ i:hover {
   text-align: center;
 }
 
+.address {
+  text-align: center;
+}
+
+.copyright {
+  text-align: right;
+}
+
 /* media queries */
 @media(max-width: 1000px) {
   .right_flex_header {
@@ -140,22 +151,16 @@ i:hover {
     justify-content: space-around;
     flex-grow: 1;
     align-items: center;
-    height: 90px;
     width: 100%;
+    margin-right: 0;
   }
 
   .right_flex_header a {
     font-size: 2rem;
-    padding: 50px;
-    margin: 50px;
   }
 
   .flex_parent {
     flex-wrap: wrap;
-  }
-
-  .sales {
-    margin-top: 50px;
   }
 
   .left_flex_header {
@@ -163,7 +168,7 @@ i:hover {
   }
 
   .sales-banner p {
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
 }
@@ -176,28 +181,23 @@ i:hover {
 /* main center content "center-section" */
 
 .center-section {
-  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  gap: 2rem;
   justify-content: center;
-}
-
-.center-section::before {
-  content: "";
   background: url('../images/background.jpg');
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
 }
 
 .center-1 {
-  position: relative;
   font-size: 1rem;
   text-align: left;
+  height: 200px;
+  background-color: #a2d7ba;
+  width:70%;
+  border: 3px solid #165B11;
+  color: #165B11;
+  padding: 20px;
 }

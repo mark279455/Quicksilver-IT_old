@@ -18,6 +18,7 @@ a {
   text-decoration: none;
 }
 
+/* header */
 .flex_parent {
   display: flex;
   background: #a2d7ba;
@@ -47,7 +48,7 @@ a {
 
 .right_flex_header a {
   font-size: 1.5rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .qit_logo {
@@ -68,53 +69,6 @@ a {
   font-size: 3rem;
   color: #165B11;
   font-weight: bold;
-}
-
-@media(max-width: 1000px) {
-  .right_flex_header {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-grow: 1;
-    align-items: center;
-    height: 90px;
-    width: 100%;
-  }
-
-  .right_flex_header a {
-    font-size: 2rem;
-    padding: 50px;
-    margin: 50px;
-  }
-
-  .flex_parent {
-    flex-wrap: wrap;
-  }
-
-  .sales {
-    margin-top: 50px;
-  }
-
-  .left_flex_header {
-    width: 100%;
-  }
-
-  .sales-banner p {
-    margin-top: 70px;
-  }
-
-}
-
-/* TO DO
-  @media(max-width: 600px) {
-  }
-} */
-
-header .nav li {
-  margin-bottom: 0 7px;
-}
-
-section {
-  padding: 125px 50px;
 }
 
 /* footer / social media */
@@ -170,4 +124,73 @@ i:hover {
   margin: 40px;
   font-family: Ubuntu, sans-serif;
   text-align: center;
+}
+
+/* media queries */
+@media(max-width: 1000px) {
+  .right_flex_header {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+  }
+
+  .right_flex_header a {
+    font-size: 2rem;
+    padding: 50px;
+    margin: 50px;
+  }
+
+  .flex_parent {
+    flex-wrap: wrap;
+  }
+
+  .sales {
+    margin-top: 50px;
+  }
+
+  .left_flex_header {
+    width: 100%;
+  }
+
+  .sales-banner p {
+    margin-top: 70px;
+  }
+
+}
+
+/* TO DO
+  @media(max-width: 600px) {
+  }
+} */
+
+/* main center content "center-section" */
+
+.center-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-section::before {
+  content: "";
+  background: url('../images/background.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.center-1 {
+  position: relative;
+  font-size: 1rem;
+  text-align: left;
 }

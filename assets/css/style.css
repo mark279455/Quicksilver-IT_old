@@ -49,6 +49,13 @@ a {
 .right_flex_header a {
   font-size: 1.5rem;
   text-transform: lowercase;
+  color: #165B11;
+}
+
+.active {
+  font-size: larger;
+  font-weight: bold;
+  border-bottom: 1px dashed #165B11;
 }
 
 .qit_logo {

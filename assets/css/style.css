@@ -55,24 +55,19 @@ a {
 }
 
 .qit {
-  color: darkgreen;
+  color: #165B11;
 }
 
-.sales {
-  /* width: 100%; */
+.sales-banner {
   text-align: center;
   padding: 20px 20px;
   background: #a2d7ba;
 }
 
-.sales p {
+.sales-banner p {
   font-size: 3rem;
-  color: darkgreen;
+  color: #165B11;
   font-weight: bold;
-}
-
-.para {
-  border: 1px solid #a2d7ba;
 }
 
 @media(max-width: 1000px) {
@@ -101,19 +96,11 @@ a {
 
   .left_flex_header {
     width: 100%;
-  }  
+  }
 }
 
-/* @media(max-width: 600px) {
-  .right_flex_header {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-grow: 1;
-    align-items: center;
-  }
-
-  .flex_parent {
-    flex-wrap: wrap;
+/* TO DO
+  @media(max-width: 600px) {
   }
 } */
 
@@ -127,6 +114,16 @@ section {
 
 footer {
   background: #a2d7ba;
+}
+
+.social ul {
   height: 100px;
-  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+i {
+  font-size: 300%;
+  color: #165B11;
 }

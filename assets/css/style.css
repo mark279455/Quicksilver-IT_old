@@ -26,7 +26,7 @@ a {
   max-height: 150px;
 }
 
-.left_flex_header {
+#left_flex_header {
   width: 50%;
   display: flex;
   justify-content: flex-start;
@@ -34,7 +34,7 @@ a {
   font-size: 1.5rem;
 }
 
-.right_flex_header {
+#right_flex_header {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -49,28 +49,28 @@ a {
   color: #165B11;
 }
 
-.active {
+#active {
   font-size: 2rem;
   font-weight: bold;
   padding: 0;
 }
 
-.qit_logo {
+#qit_logo {
   height: 150px;
 }
 
-.qit {
+#qit {
   color: #165B11;
   font-size: 3rem;
 }
 
-.sales-banner {
+#sales-banner {
   text-align: center;
   padding: 10px 10px;
   background: #a2d7ba;
 }
 
-.sales-banner p {
+#sales-banner p {
   font-size: 3rem;
   color: #165B11;
   font-weight: bold;
@@ -88,7 +88,7 @@ footer {
   background: #a2d7ba;
 }
 
-.social ul {
+#social ul {
   height: 100px;
   display: flex;
   justify-content: space-around;
@@ -101,7 +101,7 @@ i {
 }
 
 i:hover {
-  font-size: 350%;
+  font-size: 352%;
   color: #165B11;
 }
 
@@ -122,31 +122,26 @@ i:hover {
   visibility: visible;
 }
 
-#top {
-  top: -30px;
-  font-size: 0.75rem;
-  border: 1px solid #165B11;
-}
-
 .hover-text {
   position: relative;
   display: inline-block;
-  margin: 40px;
+  margin: 10px;
   font-family: Ubuntu, sans-serif;
   text-align: center;
 }
 
-.address {
+#address {
   text-align: center;
+  color: #165B11;
 }
 
-.copyright {
+#copyright {
   text-align: right;
 }
 
 /* media queries */
 @media(max-width: 1000px) {
-  .right_flex_header {
+  #right_flex_header {
     flex-direction: row;
     justify-content: space-around;
     flex-grow: 1;
@@ -155,7 +150,7 @@ i:hover {
     margin-right: 0;
   }
 
-  .right_flex_header a {
+  #right_flex_header a {
     font-size: 2rem;
   }
 
@@ -163,11 +158,11 @@ i:hover {
     flex-wrap: wrap;
   }
 
-  .left_flex_header {
+  #left_flex_header {
     width: 100%;
   }
 
-  .sales-banner p {
+  #sales-banner p {
     margin-top: 30px;
   }
 
@@ -180,24 +175,21 @@ i:hover {
 
 /* main center content "center-section" */
 
-.center-section {
+#center-section {
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
   gap: 2rem;
-  justify-content: space-between;
+  justify-content: space-around;
   background: url('../images/background.jpg');
 }
 
-.center-1 {
+.center-panel {
   font-size: 2rem;
-  /* text-align: left; */
-  /* height: 200px; */
   background-color: #a2d7ba;
-  /* width:70%; */
   border: 3px solid #165B11;
   color: #165B11;
+  width: 28%;
   padding: 20px;
 }

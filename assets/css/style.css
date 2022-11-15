@@ -185,18 +185,18 @@ i:hover {
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 2rem;
-  justify-content: center;
+  justify-content: space-between;
   background: url('../images/background.jpg');
 }
 
 .center-1 {
-  font-size: 1rem;
-  text-align: left;
-  height: 200px;
+  font-size: 2rem;
+  /* text-align: left; */
+  /* height: 200px; */
   background-color: #a2d7ba;
-  width:70%;
+  /* width:70%; */
   border: 3px solid #165B11;
   color: #165B11;
   padding: 20px;

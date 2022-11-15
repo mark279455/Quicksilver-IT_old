@@ -21,7 +21,7 @@ a {
 /* header */
 .flex_parent {
   display: flex;
-  background: #a2d7ba;
+  background: #a5f4dc;
   flex-wrap: nowrap;
   max-height: 150px;
 }
@@ -38,7 +38,7 @@ a {
   width: 50%;
   display: flex;
   flex-direction: column;
-  background: #a2d7ba;
+  background: #a5f4dc;
   margin-right: 2rem;
   justify-content: flex-end;
   align-items: flex-end;
@@ -64,18 +64,6 @@ a {
   font-size: 3rem;
 }
 
-#sales-banner {
-  text-align: center;
-  padding: 10px 10px;
-  background: #a2d7ba;
-}
-
-#sales-banner p {
-  font-size: 3rem;
-  color: #165B11;
-  font-weight: bold;
-}
-
 .sticky {
   position: sticky;
   width: 100%;
@@ -85,24 +73,42 @@ a {
 /* footer / social media */
 
 footer {
-  background: #a2d7ba;
+  background-color: #a5f4dc;
+  font-family: Ubuntu, sans-serif;
+  height: 120px;
+  color: #165B11;
+}
+
+#footer-items {
+  display: flex;
+  gap: 4rem;
+  width: 100%;
+}
+
+#address {
+  align-self: flex-start;
+  font-size: 0.8rem;
+}
+
+#social {
+  display: flex;
+  width: 100%;
 }
 
 #social ul {
-  height: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 i {
-  font-size: 300%;
-  color: #165B11;
+  font-size: 160%;
 }
 
 i:hover {
-  font-size: 352%;
-  color: #165B11;
+  font-size: 165%;
+  /* color: #165B11; */
 }
 
 .tooltip-text {
@@ -110,10 +116,7 @@ i:hover {
   position: absolute;
   z-index: 1;
   width: 100px;
-  color: #165B11;
   font-size: 16px;
-  background-color: #a2d7ba;
-  border-radius: 10px;
   padding: 10px 15px 10px 15px;
   font-family: Ubuntu, sans-serif;
 }
@@ -128,11 +131,6 @@ i:hover {
   margin: 10px;
   font-family: Ubuntu, sans-serif;
   text-align: center;
-}
-
-#address {
-  text-align: center;
-  color: #165B11;
 }
 
 #copyright {
@@ -175,11 +173,31 @@ i:hover {
 
 /* main center content "center-section" */
 
+#sales-banner {
+  text-align: center;
+  padding: 10px 10px;
+  background: #a5f4dc;
+}
+
+#sales-banner p {
+  font-size: 3rem;
+  color: #165B11;
+  font-weight: bold;
+}
+
+#sales-pitch {
+  background: #a5f4dc;
+  color: #165B11;
+  font-size: 1.5rem;
+}
+
 #center-section {
-  height: 100vh;
+  font-family: Ubuntu, sans-serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
   justify-content: space-around;
   background: url('../images/background.jpg');
@@ -187,7 +205,7 @@ i:hover {
 
 .center-panel {
   font-size: 2rem;
-  background-color: #a2d7ba;
+  background-color: #a5f4dc;
   border: 3px solid #165B11;
   color: #165B11;
   width: 28%;

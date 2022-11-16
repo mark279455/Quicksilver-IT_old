@@ -45,6 +45,14 @@ the background image is one the creator took of his daughter's laptop.
 
 ### Wireframes
 
-Wireframes were created
+Wireframes were created for the following screen widths:
+
+420
+548
+772
+992
+
+
+
 
 
